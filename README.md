@@ -17,6 +17,7 @@ Displays the selected movie details
 APIs used: 
   1. “movie/{movie_id}” endpoint (https://developers.themoviedb.org/3/movies/get-movie-details)
   2. "movie/{movie_id}/credits" endpoint (https://developers.themoviedb.org/3/movies/get-movie-credits)
+  
 This screen consists of the movie title, poster image, overview, duration, release date, genre, backdrop image, cast names with images if present
 All the images aspect ratio is retained.
 
