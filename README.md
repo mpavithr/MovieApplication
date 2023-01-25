@@ -42,3 +42,7 @@ All the images aspect ratio is retained.
 `Constants.js` - colors of application - for styling
 
 `Styles.js` - stylesheet of application
+
+## Video
+
+Watch movie_app_video.mp4 for a demo
