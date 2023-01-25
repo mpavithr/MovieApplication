@@ -4,11 +4,13 @@ import {
   Text,
   Image,
   ScrollView,
+  useAnimatedValue,
 } from 'react-native';
 import {IMAGE_POSTER_URL} from '../config';
 import {GET} from '../Services/API';
 import Styles from '../Styles';
 import Loader from './Loader';
+import Cast from './Cast';
 
 const MovieDetails = props => {
   const [loading, setLoading] = useState(true);
@@ -91,9 +93,11 @@ const MovieDetails = props => {
             />
           </View>
 
-          <View>
-            <Text style={Styles.heading}>CAST</Text>
-          </View>
+          <Cast
+            title="CAST"
+            url={`/movie/${props.route.params.movieId}/credits`}
+            isForPage="details"
+          />
         </View>
       )}
     </ScrollView>

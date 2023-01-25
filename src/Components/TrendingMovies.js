@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import {View, Text, FlatList, Image, ScrollView, TouchableOpacity} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import {GET} from '../Services/API';
 import {IMAGE_POSTER_URL} from '../config';
 import Styles from '../Styles';
@@ -9,18 +8,11 @@ import Loader from './Loader';
 const TrendingMovies = props => {
     const [loading, setLoading] = useState(true);
     const [movies, setMovies] = useState([]);
-    // const [images, setImages] = useState([]);
-    // const [names, setNames] = useState([]);
 
     useEffect(() => {
         const getMovies = async () => {
             const response = await GET(props.url);
             setMovies(response.results);
-            // const names = response.results.map((data) => `${data.original_title}`);
-            // const images = response.results.map((data) => `${IMAGE_POSTER_URL}${data.backdrop_path}`);
-            // setImages(images);
-            // setNames(names);
-            console.log(movies);
             setLoading(false);
         };
 

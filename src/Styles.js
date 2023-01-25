@@ -93,6 +93,21 @@ const Styles = StyleSheet.create({
         width: 50,
         height: 50,
         resizeMode: 'contain',
+    },
+    trendingPeopleImage: {
+        height: 70,
+        width: 70,
+        borderRadius: 500,
+    },
+    trendingPeopleName: {
+        width: 60,
+        color: Constants.textColor,
+        fontSize: 12,
+        textAlign: 'center',
+        marginTop: 10,
+    },
+    trendingPeopleContainer: {
+        margin: 10,
     }
 });
 
