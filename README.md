@@ -5,15 +5,18 @@ Two Screen application
 
 ## Screen One
 Displays a grid of current popular movies
+
 API used: “movie/popular” endpoint (https://developers.themoviedb.org/3/movies/get-popular-movies)
 
 Handles network connectivity via Loading sign (Loading.js)
+
 Handles errors when fetching API
 
 On click of a movie, will be navigated to Screen Two: the movie details screen
 
 ## Screen Two
 Displays the selected movie details 
+
 APIs used: 
   1. “movie/{movie_id}” endpoint (https://developers.themoviedb.org/3/movies/get-movie-details)
   2. "movie/{movie_id}/credits" endpoint (https://developers.themoviedb.org/3/movies/get-movie-credits)
