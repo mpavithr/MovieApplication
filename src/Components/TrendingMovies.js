@@ -32,7 +32,6 @@ const TrendingMovies = props => {
                         }
                         keyExtractor={item => item.id}
                         data={movies}
-                        numColumns={3}
                         renderItem={item => displayMovies(item, props)}
                     />
                 </View>
@@ -48,6 +47,11 @@ const displayMovies = ({item}, props) => {
           props.navigation.push('movieDetails', {movieId: item.id});
         }}
         style={{marginHorizontal: 10}}>
+        <View style={{flexDirection: 'row'}}>
+            <View style={Styles.line} />
+            <Text style={Styles.item}>{item.original_title}</Text>
+            <View style={Styles.line} />
+        </View>
         <Image
           source={{uri: `${IMAGE_POSTER_URL}${item.poster_path}`}}
           style={Styles.image} 

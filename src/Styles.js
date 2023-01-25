@@ -32,6 +32,12 @@ const Styles = StyleSheet.create({
         paddingVertical: 5,
         marginHorizontal: 10,
     },
+    line: {
+        backgroundColor: Constants.secondaryColor, 
+        height: 2, 
+        flex: 1, 
+        alignSelf: 'center'
+    },
     titleHeading: {
         fontSize: 18,
         color: Constants.secondaryColor,
