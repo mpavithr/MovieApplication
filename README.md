@@ -22,13 +22,19 @@ All the images aspect ratio is retained.
 
 ## Code structure explanation
 `App.js` - consists of the navigation stack of the 2 screens
+
 `Home.js` - Screen 1 of the application
+
 `Components` folder:
   1. `TrendingMovies.js` - contains logic and rendering of Screen 1 
   2. `MovieDetails.js` - contains logic and rendering of Screen 2 
   3. `Loader.js` - incase of network connectivity or other issues
   4. `Cast.js` - contains logic and rendering of cast names and images in Screen 2
+ 
 `Services/API.js` - consists of the base get API logic
+
 `config.js` - base urls and api key
+
 `Constants.js` - colors of application - for styling
+
 `Styles.js` - stylesheet of application
