@@ -40,12 +40,12 @@ const Cast = props => {
 
 const displayPeople = ({item}) => {
   return (
-    <View style={Styles.trendingPeopleContainer}>
+    <View style={Styles.castContainer}>
       <Image
         source={{uri: `${IMAGE_POSTER_URL}${item.profile_path}`}}
-        style={Styles.trendingPeopleImage}
+        style={Styles.castImage}
       />
-      <Text style={Styles.trendingPeopleName}>{item.name}</Text>
+      <Text style={Styles.castName}>{item.name}</Text>
     </View>
   );
 };

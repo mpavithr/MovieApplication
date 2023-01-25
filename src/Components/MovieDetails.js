@@ -34,17 +34,6 @@ const MovieDetails = props => {
     ));
   };
 
-  const getProductionCompany = () => {
-    return details.production_companies.map(company => (
-      <View style={Styles.companyContainer}>
-        <Image
-            source={{uri: `${IMAGE_POSTER_URL}${company.logo_path}`}}
-            style={Styles.companyImage} 
-        />
-      </View>
-    ));
-  };
-
   return (
     <ScrollView style={Styles.sectionBg}>
       {loading ? (
@@ -78,11 +67,6 @@ const MovieDetails = props => {
           <Text style={Styles.heading}>GENRE</Text>
           <View style={Styles.row}>
             {getGenre()}
-          </View>
-
-          <Text style={Styles.heading}>PRODUCTION COMPANIES</Text>
-          <View style={Styles.row}>
-            {getProductionCompany()}
           </View>
 
           <View>

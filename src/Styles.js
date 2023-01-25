@@ -11,7 +11,7 @@ const Styles = StyleSheet.create({
     container: {
         padding: 15,
         flex: 1,
-        paddingBottom: 200,
+        paddingBottom: 150,
     },
     item: {
         padding: 20,
@@ -79,34 +79,19 @@ const Styles = StyleSheet.create({
         flexDirection: 'row', 
         flexWrap: 'wrap',
     },
-    companyContainer: {
-        borderWidth: 1,
-        borderRadius: 5,
-        borderColor: Constants.baseColor,
-        paddingHorizontal: 10,
-        paddingVertical: 5,
-        marginHorizontal: 10,
-        backgroundColor: "#FFFAFA",
-    },
-    companyImage: {
-        flex: 1,
-        width: 50,
-        height: 50,
-        resizeMode: 'contain',
-    },
-    trendingPeopleImage: {
+    castImage: {
         height: 70,
         width: 70,
         borderRadius: 500,
     },
-    trendingPeopleName: {
+    castName: {
         width: 60,
         color: Constants.textColor,
         fontSize: 12,
         textAlign: 'center',
         marginTop: 10,
     },
-    trendingPeopleContainer: {
+    castContainer: {
         margin: 10,
     }
 });
