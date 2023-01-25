@@ -4,7 +4,7 @@ React Native App that shows current trending movies and its details
 Two Screen application
 
 ## Screen One
-Displays a grid of current popular movies
+Displays all the current popular movies
 
 API used: “movie/popular” endpoint (https://developers.themoviedb.org/3/movies/get-popular-movies)
 
@@ -12,7 +12,7 @@ Handles network connectivity via Loading sign (Loading.js)
 
 Handles errors when fetching API
 
-On click of a movie, will be navigated to Screen Two: the movie details screen
+On pressing a movie, will be navigated to Screen Two: the movie details screen
 
 ## Screen Two
 Displays the selected movie details 
